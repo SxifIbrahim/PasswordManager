@@ -52,6 +52,9 @@ def copy_selected():
         item = credentials[selected[0]]
         pyperclip.copy(f"{item['username']}:{item['password']}")
 
+# UI setup
+ctk.set_appearance_mode("dark")
+
 app = ctk.CTk()
 app.title("Password Manager")
 app.geometry("500x400")
